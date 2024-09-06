@@ -7,11 +7,20 @@
     <meta name="keywords" content="java, html, css, js, go, react, angular">
     <meta name="author" content="ijse">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+    <link rel="stylesheet" href="../assests/style/normalize.css" >
 
     <title>Assignment 03: Case 01</title>
 
     <style>
+
+        *{
+            margin: 0;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
 
         body>section {
             width: 50vw;
@@ -22,29 +31,148 @@
         body>section:first-child {
             background: red;
         }
+
         body>section:nth-child(2) {
             background: green;
             right: 0;
         }
+
         body>section:nth-child(3) {
             background: gold;
             bottom: 0;
         }
+
         body>section:nth-child(4) {
             background: hotpink;
             right: 0;
             bottom: 0;
         }
 
-    </style>
+        body>section>div {
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
 
+        body>section>div>div {
+            background: red;
+            width: 5vw;
+            height: 5vw;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #square{
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #square>div>div{
+            background: red;
+            width: 10vw;
+            height: 10vw;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .box {
+            background: white;
+            border-radius: 100%;
+            width: 15vw;
+            height: 15vw;
+            position: absolute;
+        }
+
+        #box1 {
+            top: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+        #box2 {
+            right: calc(-15vw/2);
+            top: calc(-15vw/2);;
+        }
+        #box3 {
+            right: 0;
+            left: 0;
+            top: calc(-15vw/2);
+            margin: auto;
+        }
+        #box4 {
+            bottom: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+        #box5 {
+            right: calc(-15vw/2);
+            bottom: calc(-15vw/2);;
+        }
+        #box6 {
+            right: 0;
+            left: 0;
+            bottom: calc(-15vw/2);
+            margin: auto;
+        }
+    </style>
 <body>
 
     <section>
-        <section>
-
-        </section>
+        <div>
+            <div></div>
+        </div>
     </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section id="square">
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+    <div id="box4" class="box"></div>
+    <div id="box5" class="box"></div>
+    <div id="box6" class="box"></div>
 
 </body>
 
